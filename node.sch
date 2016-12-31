@@ -547,10 +547,6 @@ Text Label 3650 6400 0    60   ~ 0
 CTRL
 Text Label 3600 6500 0    60   ~ 0
 CHRG
-Text Label 8300 4500 0    60   ~ 0
-CHRG
-Text Label 8300 4600 0    60   ~ 0
-CTRL
 Text HLabel 3550 6100 0    60   Input ~ 0
 TXD
 Text HLabel 3550 6200 0    60   Input ~ 0
@@ -814,4 +810,8 @@ Wire Wire Line
 Connection ~ 4200 6600
 Wire Wire Line
 	7600 5550 7350 5550
+Text Label 8300 4500 0    60   ~ 0
+CTRL
+Text Label 8300 4600 0    60   ~ 0
+CHRG
 $EndSCHEMATC
