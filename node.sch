@@ -325,17 +325,6 @@ F 3 "" H 8050 3550 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R14
-U 1 1 583BD5E7
-P 8150 5150
-F 0 "R14" H 8220 5196 50  0000 L CNN
-F 1 "10k" V 8150 5050 50  0000 L CNN
-F 2 "Resistors_SMD:R_0603" V 8080 5150 50  0001 C CNN
-F 3 "" H 8150 5150 50  0000 C CNN
-	1    8150 5150
-	1    0    0    -1  
-$EndComp
-$Comp
 L R R9
 U 1 1 583BD73B
 P 7250 3900
@@ -714,8 +703,6 @@ Wire Wire Line
 	7600 4900 7600 5000
 Wire Wire Line
 	7600 5300 7600 5550
-Wire Wire Line
-	7350 5550 8150 5550
 Connection ~ 7350 5550
 Wire Wire Line
 	7200 4700 8500 4700
@@ -840,14 +827,10 @@ Wire Wire Line
 	3850 6500 3550 6500
 Connection ~ 7250 4500
 Wire Wire Line
-	8150 5550 8150 5300
-Connection ~ 7600 5550
-Wire Wire Line
-	8150 5000 8150 4600
-Connection ~ 8150 4600
-Wire Wire Line
 	1400 3350 2400 3350
 Wire Wire Line
 	4200 6600 4200 6650
 Connection ~ 4200 6600
+Wire Wire Line
+	7600 5550 7350 5550
 $EndSCHEMATC
