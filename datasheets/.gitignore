@@ -1,0 +1,8 @@
+# ignore vim temporary files
+*.swp
+
+# ignore things that could be datasheets
+*.pdf
+*.PDF
+*.jpg
+*.JPG

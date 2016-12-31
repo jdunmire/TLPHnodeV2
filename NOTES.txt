@@ -1,0 +1,91 @@
+
+
+###Fri 25 Nov 2016 04:06:11 PM PST
+    - For a rechargable option:
+       - LiFePO4 18350 sized battery
+       - bq25070 ($2.46) or ADP5063 ($3.43) charger
+       - MIC5528 ($0.19) or AP7365 ($0.40) 3.3v linear regulator
+       - Use battery holder with lugs or wires
+       - The chargers can yield a battery output voltage 4.9v, or
+         possibly higher. So a regulator is needed.
+       - Watch for quiesent currents (which are similar to the ESP8266!)
+
+    - The TLPHnode board should be minimized to reduce cost. Use wires
+      to the power source which could be 2 Alkaline AA, or a single
+      LiFePO4.
+
+    - The charging circuit could be on the PCB but not populated.
+
+    - The linear regulator could be used to provide a USB powered
+      option with the AA batteries as backup.
+      
+
+###Sun 27 Nov 2016 11:38:00 AM PST
+    - Use a 6 pin connector and ribbon so that the prgm switch can be
+      moved to the 'programming' board.
+    - Use a LDO linear regulator on the sensor board to protect from
+      over voltage of LiFePO4, or even LiPoly, batteries.
+    - Put the battery charger IC on the programming board or a separate
+      battery supply board.
+    - The 'programming' board can be fab as part of the sensor board.
+      Use holes or a cutout to make it easier to separate the board.
+
+
+###Mon 05 Dec 2016 11:53:34 AM PST
+    - ST Micro is not forthcoming on the adjustable regulator. So try
+      the fixed, even though it is small. Consider laying out a foot
+      print for an alternative regulator in addition to the ST Micro.
+      I'm not ready to give up on the ST Micro regulator because it has
+      such a log quesent current.
+      
+    TODO:
+      - fix alignment between ESP-12 model and ESP-12E footprint - DONE
+      - Change pin numbering on ESP-12E footprint to match ESP-12 - DONE
+      - change to ESP-12
+      - Re-organize footprints - DONE
+      - Add 3d models
+            - Regulator - flipchip-4
+            - RPC connector
+            - Switch
+            
+      - Settle on FPC connector (datasheet is wrong)
+      - Update BOM at Digikey
+      - 
+
+
+###Tue 06 Dec 2016 10:00:03 AM PST
+    - In order to use a 4 layer board for less than the cost of the last
+      board, the area must be less than 1.42 square inches.
+    - Keep in mind that a 2 layer board is still 1/2 of that price, but
+      the there are other advantages including smaller traces, drills
+      and annual rings.
+
+    LIBRARIES
+    ---------
+    KiCAD has three collections that could be described as libraries:
+        - schematic symbols (typically in a library/ directory)
+        - 3d models (typically in a modules/packages3d/ directory)
+        - footprints
+          These are the tough ones to keep straight.
+            - The new 'footprint collection structure' is a directory of
+              directories.
+            - Each sub-directory ends in .pretty.
+            - Actual footprints are in individual files beneath the
+              *.pretty/ directories.
+            - Each *.pretty directory must be added as a separate path.
+            - Each *.pretty directory is an individual git repository.
+            - There is not clear parent directory name, though in
+              ~/kicad/README.md I proposed putting them in the modules/
+              directory with the 3d-models
+
+###Thu 08 Dec 2016 09:47:13 PM PST
+    - The LPS25HB (pressure sensor) can not be used on an OSH 2 layer
+      board because there is not enough clearance between the corner
+      pins. The error is 0.3 mils.
+    - Set the default design rules as close to the 2 layer as possible,
+      while allowing the LPS25HB to be used.
+
+
+###Mon 12 Dec 2016 02:35:20 PM PST
+    - Changed to 6-pin FPC connnector and 2-pin through-hole connector
+      for power.

@@ -1,0 +1,4 @@
+This file is for changes made by Licensee. See section 3.4b of the CERN
+Open Hardware License v1.2 (LICENSE.txt).
+
+
