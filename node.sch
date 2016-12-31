@@ -380,17 +380,6 @@ F 3 "" H 5300 1650 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C1
-U 1 1 583BE628
-P 1400 3000
-F 0 "C1" H 1515 3046 50  0000 L CNN
-F 1 "1 uF" H 1515 2955 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 1438 2850 50  0001 C CNN
-F 3 "" H 1400 3000 50  0000 C CNN
-	1    1400 3000
-	1    0    0    -1  
-$EndComp
-$Comp
 L C C3
 U 1 1 583BE718
 P 3350 2750
@@ -745,17 +734,11 @@ Connection ~ 3350 2550
 Wire Wire Line
 	3350 2950 3350 2900
 Wire Wire Line
-	1400 2550 1400 2850
-Connection ~ 1400 2550
-Wire Wire Line
-	1400 3150 1400 3350
-Wire Wire Line
 	1600 2650 1550 2650
 Wire Wire Line
 	1550 2650 1550 2550
 Wire Wire Line
 	2400 3150 2400 3400
-Connection ~ 2400 3350
 Wire Wire Line
 	1550 1400 1300 1400
 Wire Wire Line
@@ -826,8 +809,6 @@ Wire Wire Line
 Wire Wire Line
 	3850 6500 3550 6500
 Connection ~ 7250 4500
-Wire Wire Line
-	1400 3350 2400 3350
 Wire Wire Line
 	4200 6600 4200 6650
 Connection ~ 4200 6600
