@@ -1,4 +1,4 @@
-update=Tue 06 Dec 2016 03:56:24 PM PST
+update=Fri 30 Dec 2016 04:39:57 PM PST
 version=1
 last_client=kicad
 [cvpcb]
@@ -15,8 +15,6 @@ SpiceForceRefPrefix=0
 SpiceUseNetNumbers=0
 LabSize=60
 ERC_TestSimilarLabels=1
-[general]
-version=1
 [eeschema]
 version=1
 LibDir=/home/jerry/kicad/library/kicad-rockingdlabs;/home/jerry/kicad/library/kicad-ESP8266
@@ -71,3 +69,5 @@ SolderMaskMinWidth=0
 DrawSegmentWidth=0.2
 BoardOutlineThickness=0.15
 ModuleOutlineThickness=0.15
+[general]
+version=1
