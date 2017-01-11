@@ -1,4 +1,4 @@
-update=Fri 30 Dec 2016 06:04:07 PM PST
+update=Sat 07 Jan 2017 11:30:24 AM PST
 version=1
 last_client=kicad
 [cvpcb]
@@ -50,8 +50,6 @@ LibName28=contrib
 LibName29=valves
 LibName30=ESP8266
 LibName31=rockingdlabs
-[general]
-version=1
 [pcbnew]
 version=1
 PageLayoutDescrFile=rockingdlabs_letter_with_logo.kicad_wks
@@ -71,3 +69,5 @@ SolderMaskMinWidth=0
 DrawSegmentWidth=0.2
 BoardOutlineThickness=0.2
 ModuleOutlineThickness=0.15
+[general]
+version=1

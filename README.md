@@ -1,5 +1,5 @@
-TLPHnode
-=========
+TLPHnodeV2
+==========
 This is a [KiCad](http://kicad-pcb.org/) project for an ESP8266 based
 temperature, light, pressure, and humidity node.
 
@@ -7,7 +7,7 @@ Additional information about this node can be found at the
 [Sensor Nodes](http://sensornodeinfo.rockingdlabs.com) website.
 
 
-Copyright Jerry Dunmire 2016.
+Copyright Jerry Dunmire 2017.
 
 This documentation describes Open Hardware and is licensed under the
 CERN OHL v. 1.2.
