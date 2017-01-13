@@ -1495,7 +1495,7 @@
   (gr_text "Copyright 2017 J. Dunmire, All Rights Reserved" (at 140.25 100.25) (layer F.SilkS)
     (effects (font (size 0.5 0.5) (thickness 0.1)))
   )
-  (gr_text "TLPHnode\n2017/01/12" (at 157.24 83.79 90) (layer F.SilkS)
+  (gr_text "TLPHnodeV2\n2017/01/12" (at 157.24 83.79 90) (layer F.SilkS)
     (effects (font (size 0.5 0.5) (thickness 0.1)))
   )
   (gr_line (start 158.5 80.5) (end 130.5 80.5) (angle 90) (layer Edge.Cuts) (width 0.2))
